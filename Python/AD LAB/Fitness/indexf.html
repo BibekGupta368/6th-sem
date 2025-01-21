@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('fitness-center.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        .programs, .trainers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Edges */
+        .container {
+            border: 10px solid #444;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            border: 5px solid #555;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header, footer {
+            border: 5px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Center</h1>
+        <nav>
+            <a href="#programs">Programs</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Transform Your Fitness Journey</h2>
+    </div>
+
+    <main class="container">
+        <!-- Programs Section -->
+        <section id="programs" class="section">
+            <h2>Our Programs</h2>
+            <div class="programs">
+                <div class="card">
+                    <img src="yoga.jpg" alt="Yoga">
+                    <h3>Yoga</h3>
+                    <p>Improve flexibility and reduce stress with our yoga classes.</p>
+                </div>
+                <div class="card">
+                    <img src="hiit.jpg" alt="HIIT">
+                    <h3>HIIT</h3>
+                    <p>High-intensity interval training to boost your endurance.</p>
+                </div>
+                <div class="card">
+                    <img src="weightlifting.jpg" alt="Weightlifting">
+                    <h3>Weightlifting</h3>
+                    <p>Build strength with expert-guided weightlifting sessions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trainers Section -->
+        <section id="trainers" class="section">
+            <h2>Meet Our Trainers</h2>
+            <div class="trainers">
+                <div class="card">
+                    <img src="trainer1.jpg" alt="Trainer 1">
+                    <h3>John Doe</h3>
+                    <p>Expert in weightlifting and strength training.</p>
+                </div>
+                <div class="card">
+                    <img src="trainer2.jpg" alt="Trainer 2">
+                    <h3>Jane Smith</h3>
+                    <p>Certified yoga instructor and wellness coach.</p>
+                </div>
+                <div class="card">
+                    <img src="trainer3.jpg" alt="Trainer 3">
+                    <h3>Mike Lee</h3>
+                    <p>HIIT specialist with 5+ years of experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section">
+            <h2>Class Schedule</h2>
+            <p>Mon,Tue,Wed,Thru,Fri,Sat : 6 to 10</p>
+            <p>Sunday : Closed</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Email: info@fitnesscenter.com</p>
+            <p>Phone: 8757922180</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fitness Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>

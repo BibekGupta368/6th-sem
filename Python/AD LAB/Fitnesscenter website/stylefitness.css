@@ -1,0 +1,104 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #ec3a04, #5e0505a5);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(45deg, #333, #444);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Other header and hero styles remain the same */
+
+/* Info Section */
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+    background-color: #111;
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.info div {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.info h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: yellow;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 50px 10%;
+    background: #222;
+}
+
+.gallery h2 {
+    font-size: 32px;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer styles remain the same */

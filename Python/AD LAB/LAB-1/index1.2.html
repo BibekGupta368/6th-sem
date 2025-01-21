@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .periodic-table {
+            border-collapse: collapse;
+        }
+        .periodic-table td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .element {
+            padding: 5px;
+            font-weight: bold;
+            color: white;
+        }
+        /* Element category colors */
+        .alkali { background-color: #ff6666; } 
+        .alkaline-earth { background-color: #ffcc66; }
+        .transition { background-color: #66ccff; }
+        .post-transition { background-color: #ff9966; }
+        .metalloid { background-color: #66ff99; }
+        .nonmetal { background-color: #66ffcc; }
+        .halogen { background-color: #ffcc99; }
+        .noble { background-color: #ff99cc; }
+        .lanthanide { background-color: #ccff66; }
+        .actinide { background-color: #ff6666; }
+    </style>
+</head>
+<body>
+
+    <h1>Periodic Table of Elements</h1>
+
+    <div class="table-container">
+        <table class="periodic-table">
+            <tr>
+                <td class="element nonmetal">H</td>
+                <td colspan="16"></td>
+                <td class="element noble">He</td>
+            </tr>
+            <tr>
+                <td class="element alkali">Li</td>
+                <td class="element alkaline-earth">Be</td>
+                <td colspan="10"></td>
+                <td class="element metalloid">B</td>
+                <td class="element nonmetal">C</td>
+                <td class="element nonmetal">N</td>
+                <td class="element nonmetal">O</td>
+                <td class="element halogen">F</td>
+                <td class="element noble">Ne</td>
+            </tr>
+            <tr>
+                <td class="element alkali">Na</td>
+                <td class="element alkaline-earth">Mg</td>
+                <td colspan="10"></td>
+                <td class="element post-transition">Al</td>
+                <td class="element metalloid">Si</td>
+                <td class="element nonmetal">P</td>
+                <td class="element nonmetal">S</td>
+                <td class="element halogen">Cl</td>
+                <td class="element noble">Ar</td>
+            </tr>
+            <tr>
+                <td class="element alkali">K</td>
+                <td class="element alkaline-earth">Ca</td>
+                <td class="element transition">Sc</td>
+                <td class="element transition">Ti</td>
+                <td class="element transition">V</td>
+                <td class="element transition">Cr</td>
+                <td class="element transition">Mn</td>
+                <td class="element transition">Fe</td>
+                <td class="element transition">Co</td>
+                <td class="element transition">Ni</td>
+                <td class="element transition">Cu</td>
+                <td class="element transition">Zn</td>
+                <td class="element post-transition">Ga</td>
+                <td class="element metalloid">Ge</td>
+                <td class="element metalloid">As</td>
+                <td class="element nonmetal">Se</td>
+                <td class="element halogen">Br</td>
+                <td class="element noble">Kr</td>
+            </tr>
+            <tr>
+                <td class="element alkali">Rb</td>
+                <td class="element alkaline-earth">Sr</td>
+                <td class="element transition">Y</td>
+                <td class="element transition">Zr</td>
+                <td class="element transition">Nb</td>
+                <td class="element transition">Mo</td>
+                <td class="element transition">Tc</td>
+                <td class="element transition">Ru</td>
+                <td class="element transition">Rh</td>
+                <td class="element transition">Pd</td>
+                <td class="element transition">Ag</td>
+                <td class="element transition">Cd</td>
+                <td class="element post-transition">In</td>
+                <td class="element post-transition">Sn</td>
+                <td class="element metalloid">Sb</td>
+                <td class="element metalloid">Te</td>
+                <td class="element halogen">I</td>
+                <td class="element noble">Xe</td>
+            </tr>
+            <tr>
+                <td class="element alkali">Cs</td>
+                <td class="element alkaline-earth">Ba</td>
+                <td class="element lanthanide">La</td>
+                <td class="element transition">Hf</td>
+                <td class="element transition">Ta</td>
+                <td class="element transition">W</td>
+                <td class="element transition">Re</td>
+                <td class="element transition">Os</td>
+                <td class="element transition">Ir</td>
+                <td class="element transition">Pt</td>
+                <td class="element transition">Au</td>
+                <td class="element transition">Hg</td>
+                <td class="element post-transition">Tl</td>
+                <td class="element post-transition">Pb</td>
+                <td class="element post-transition">Bi</td>
+                <td class="element metalloid">Po</td>
+                <td class="element halogen">At</td>
+                <td class="element noble">Rn</td>
+            </tr>
+            <tr>
+                <td class="element alkali">Fr</td>
+                <td class="element alkaline-earth">Ra</td>
+                <td class="element actinide">Ac</td>
+                <td class="element transition">Rf</td>
+                <td class="element transition">Db</td>
+                <td class="element transition">Sg</td>
+                <td class="element transition">Bh</td>
+                <td class="element transition">Hs</td>
+                <td class="element transition">Mt</td>
+                <td class="element transition">Ds</td>
+                <td class="element transition">Rg</td>
+                <td class="element transition">Cn</td>
+                <td class="element post-transition">Nh</td>
+                <td class="element post-transition">Fl</td>
+                <td class="element post-transition">Mc</td>
+                <td class="element post-transition">Lv</td>
+                <td class="element halogen">Ts</td>
+                <td class="element noble">Og</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
